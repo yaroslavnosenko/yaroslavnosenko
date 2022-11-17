@@ -1,3 +1,29 @@
 {
-  "extends": "next/core-web-vitals"
+    "extends": ["next/core-web-vitals", "prettier"],
+    "plugins": ["unused-imports", "prettier"],
+    "rules": {
+        "import/order": [
+            "error",
+            {
+                "groups": [
+                    "index",
+                    "sibling",
+                    "parent",
+                    "internal",
+                    "external",
+                    "builtin",
+                    "object",
+                    "type"
+                ],
+                "newlines-between": "always",
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": true
+                }
+            }
+        ],
+        "prettier/prettier": "error",
+        "no-unused-vars": "error",
+        "unused-imports/no-unused-imports": "error"
+    }
 }
