@@ -8,23 +8,37 @@ import {
   ButtonGroup,
   Button,
   SimpleGrid,
+  Text,
 } from '@chakra-ui/react'
 
 const LeftSide = () => {
   return (
     <>
-      <Heading size="3xl">
-        HI, I&apos;M YAROSLAV.
+      <Heading lineHeight={1.15} size="3xl">
+        Hi, I&apos;m{' '}
+        <Text color="white" as="span" bg="gray.900" rounded="sm" px="2">
+          Yaroslav
+        </Text>
+        .
         <br />
-        A CREATIVE DEVELOPER
+        A Software Developer
         <br />
-        BASED IN KOSICE
+        based in <Text as="s">Košice</Text>
+      </Heading>
+      <Heading
+        size="md"
+        fontWeight="900"
+        textTransform="uppercase"
+        color="blackAlpha.400"
+        mt="8"
+      >
+        Development • Agile • Strategy
       </Heading>
       <ButtonGroup size="lg" mt="8" isAttached variant="outline">
         <Button colorScheme="blue" variant="solid">
           Let&apos;s talk
         </Button>
-        <Button>See projects</Button>
+        <Button>Explore</Button>
       </ButtonGroup>
     </>
   )
@@ -63,6 +77,7 @@ export const Hero = () => {
                 w="100%"
                 maxW="520px"
                 src="/avatar.jpg"
+                filter="grayscale(100%)"
               />
             </SlideFade>
           </Flex>
