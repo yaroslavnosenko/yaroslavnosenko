@@ -59,7 +59,6 @@ export const Hero = () => {
               style={{ transitionDuration: '0.5s' }}
               in={true}
               offsetX="-50%"
-              unmountOnExit={true}
             >
               <LeftSide />
             </SlideFade>
@@ -69,7 +68,6 @@ export const Hero = () => {
               style={{ transitionDuration: '0.5s' }}
               in={true}
               offsetX="50%"
-              unmountOnExit={true}
             >
               <Image
                 rounded="full"
