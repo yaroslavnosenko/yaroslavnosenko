@@ -1,11 +1,11 @@
-import { Box } from '@chakra-ui/react'
-
-import { Header } from 'components'
+import { Header, Footer, Hero } from 'components'
 
 export default function Home() {
   return (
-    <Box>
+    <>
       <Header />
-    </Box>
+      <Hero />
+      <Footer />
+    </>
   )
 }
