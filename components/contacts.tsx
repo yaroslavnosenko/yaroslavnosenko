@@ -13,13 +13,7 @@ import {
   IconButton,
 } from '@chakra-ui/react'
 import { FiCopy } from 'react-icons/fi'
-import {
-  SiFacebook,
-  SiInstagram,
-  SiTelegram,
-  SiGithub,
-  SiLinkedin,
-} from 'react-icons/si'
+import { SiInstagram, SiTelegram, SiGithub, SiLinkedin } from 'react-icons/si'
 
 const EMAIL = 'yaroslav.nosenko.mail@gmail.com'
 
@@ -66,11 +60,24 @@ export const Contacts = () => {
             </Box>
             <Wrap justify={[null, null, 'flex-end']}>
               <WrapItem gap="4">
-                <Icon boxSize="8" as={SiTelegram} />
-                <Icon boxSize="8" as={SiInstagram} />
-                <Icon boxSize="8" as={SiFacebook} />
-                <Icon boxSize="8" as={SiGithub} />
-                <Icon boxSize="8" as={SiLinkedin} />
+                <Link href="https://t.me/yaroslavnosenko" isExternal>
+                  <Icon boxSize="8" as={SiTelegram} />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/yaroslav.nosenko/"
+                  isExternal
+                >
+                  <Icon boxSize="8" as={SiInstagram} />
+                </Link>
+                <Link href="https://github.com/yaroslavnosenko" isExternal>
+                  <Icon boxSize="8" as={SiGithub} />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/yaroslav-nosenko/"
+                  isExternal
+                >
+                  <Icon boxSize="8" as={SiLinkedin} />
+                </Link>
               </WrapItem>
             </Wrap>
           </Box>
