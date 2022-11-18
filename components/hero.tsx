@@ -10,6 +10,7 @@ import {
   SimpleGrid,
   Text,
   Link,
+  useMediaQuery,
 } from '@chakra-ui/react'
 
 const LeftSide = () => {
@@ -47,7 +48,21 @@ const LeftSide = () => {
   )
 }
 
+const RightSide = () => {
+  return (
+    <Image
+      rounded="full"
+      alt="avatar"
+      w="100%"
+      maxW="520px"
+      src="/avatar.jpg"
+      filter="grayscale(100%)"
+    />
+  )
+}
+
 export const Hero = () => {
+  const [isMobile] = useMediaQuery('(max-width: 768px)')
   return (
     <Box as="section" py="8">
       <Container maxW="container.xl">
@@ -58,29 +73,28 @@ export const Hero = () => {
           columns={[1, 1, 1, 2]}
         >
           <Box>
-            <SlideFade
-              style={{ transitionDuration: '0.5s' }}
-              in={true}
-              offsetX="-50%"
-            >
-              <LeftSide />
-            </SlideFade>
+            {isMobile && <LeftSide />}
+            {!isMobile && (
+              <SlideFade
+                style={{ transitionDuration: '0.5s' }}
+                in={true}
+                offsetX="-50%"
+              >
+                <LeftSide />
+              </SlideFade>
+            )}
           </Box>
           <Flex justify={['center', 'center', 'center', 'flex-end']}>
-            <SlideFade
-              style={{ transitionDuration: '0.5s' }}
-              in={true}
-              offsetX="50%"
-            >
-              <Image
-                rounded="full"
-                alt="avatar"
-                w="100%"
-                maxW="520px"
-                src="/avatar.jpg"
-                filter="grayscale(100%)"
-              />
-            </SlideFade>
+            {isMobile && <RightSide />}
+            {!isMobile && (
+              <SlideFade
+                style={{ transitionDuration: '0.5s' }}
+                in={true}
+                offsetX="50%"
+              >
+                <RightSide />
+              </SlideFade>
+            )}
           </Flex>
         </SimpleGrid>
       </Container>
