@@ -25,7 +25,7 @@ const LeftSide = () => {
         <br />
         A Software Developer
         <br />
-        based in <Text as="s">Košice</Text>
+        based in <Text as="u">Košice</Text>
       </Heading>
       <Heading
         size="md"
