@@ -10,6 +10,10 @@ const breakpoints = {
 
 export const theme = extendTheme({
   breakpoints,
+  fonts: {
+    heading: `'Outfit', sans-serif`,
+    body: `'Outfit', sans-serif`,
+  },
   components: {
     Button: {
       baseStyle: {

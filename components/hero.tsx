@@ -56,7 +56,6 @@ const RightSide = () => {
       w="100%"
       maxW="520px"
       src="/avatar.jpg"
-      filter="grayscale(100%)"
     />
   )
 }

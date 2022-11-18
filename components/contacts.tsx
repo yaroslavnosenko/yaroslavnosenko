@@ -12,7 +12,13 @@ import {
   useToast,
 } from '@chakra-ui/react'
 import { FiCopy } from 'react-icons/fi'
-import { SiTelegram, SiInstagram, SiFacebook, SiGithub } from 'react-icons/si'
+import {
+  SiTelegram,
+  SiInstagram,
+  SiFacebook,
+  SiGithub,
+  SiLinkedin,
+} from 'react-icons/si'
 
 const EMAIL = 'yaroslav.nosenko.mail@gmail.com'
 
@@ -42,6 +48,7 @@ export const Contacts = () => {
             <Icon boxSize="8" as={SiInstagram} />
             <Icon boxSize="8" as={SiFacebook} />
             <Icon boxSize="8" as={SiGithub} />
+            <Icon boxSize="8" as={SiLinkedin} />
           </WrapItem>
         </Wrap>
         <Box mt="8">
