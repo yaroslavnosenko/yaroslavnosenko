@@ -37,7 +37,7 @@ export const WorkExperience = () => {
           mb="12"
           w="24"
         />
-        <Heading mb="12">Work Experience • 5+ years</Heading>
+        <Heading mb="12">💼 Work Experience • 5+ years</Heading>
 
         <SimpleGrid gap="8" columns={[1, 1, 2, 3]}>
           <Box p="6" borderWidth="1px" borderColor="gray.900">

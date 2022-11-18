@@ -34,7 +34,7 @@ export const Projects = () => {
           mb="12"
           w="24"
         />
-        <Heading mb="12">Projects</Heading>
+        <Heading mb="12">💸 Projects</Heading>
 
         <SimpleGrid gap="8" columns={[1, 1, 2, 3]}>
           <Box p="6" borderWidth="1px">
