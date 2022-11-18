@@ -18,7 +18,7 @@ const LeftSide = () => {
     <>
       <Heading lineHeight={1.15} size="3xl">
         Hi, I&apos;m{' '}
-        <Text color="white" as="span" bg="gray.900" rounded="sm" px="2">
+        <Text color="white" as="span" bg="chakra-body-text" rounded="sm" px="2">
           Yaroslav
         </Text>
         .

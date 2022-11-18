@@ -67,7 +67,7 @@ export const Projects = () => {
 
           <Box p="6" borderWidth="1px">
             <HStack gap="2">
-              <Avatar name="S H" bg="gray.900" />
+              <Avatar name="S H" bg="chakra-body-text" />
               <Box>
                 <Heading size="md">Servicehub.sk</Heading>
                 <Text>Car-repair service</Text>
