@@ -15,7 +15,7 @@ export const Header = () => {
             spacing="8"
           >
             <Link>About</Link>
-            <Link>Projects</Link>
+            <Link>Explore</Link>
             <Link>Contacts</Link>
           </HStack>
           <Box textAlign="end" flex="1">

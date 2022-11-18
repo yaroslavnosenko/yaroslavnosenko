@@ -1,4 +1,4 @@
-import { Header, Footer, Hero, WorkExperience } from 'components'
+import { Header, Footer, Hero, WorkExperience, Projects } from 'components'
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <Header />
       <Hero />
       <WorkExperience />
+      <Projects />
       <Footer />
     </>
   )
