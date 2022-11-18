@@ -9,6 +9,7 @@ import {
   Button,
   SimpleGrid,
   Text,
+  Link,
 } from '@chakra-ui/react'
 
 const LeftSide = () => {
@@ -35,10 +36,12 @@ const LeftSide = () => {
         Development • Agile • Strategy
       </Heading>
       <ButtonGroup size="lg" mt="8" isAttached variant="outline">
-        <Button colorScheme="blue" variant="solid">
+        <Button colorScheme="blue" variant="solid" as={Link} href="#contacts">
           Let&apos;s talk
         </Button>
-        <Button>Explore</Button>
+        <Button as={Link} href="#explore">
+          Explore
+        </Button>
       </ButtonGroup>
     </>
   )

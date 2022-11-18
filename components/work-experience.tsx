@@ -28,7 +28,7 @@ import {
 
 export const WorkExperience = () => {
   return (
-    <Box py="12" as="section">
+    <Box py="12" as="section" id="explore">
       <Container maxW="container.xl">
         <Divider
           opacity="1"

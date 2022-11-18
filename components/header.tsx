@@ -14,12 +14,13 @@ export const Header = () => {
             justify="center"
             spacing="8"
           >
-            <Link>About</Link>
-            <Link>Explore</Link>
-            <Link>Contacts</Link>
+            <Link href="#explore">Explore</Link>
+            <Link href="#contacts">Contacts</Link>
           </HStack>
           <Box textAlign="end" flex="1">
-            <Button variant="outline">Let&apos;s talk</Button>
+            <Button as={Link} variant="outline" href="#contacts">
+              Let&apos;s talk
+            </Button>
           </Box>
         </HStack>
       </Container>
