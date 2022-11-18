@@ -2,20 +2,21 @@ import {
   Box,
   Container,
   Heading,
-  Icon,
   Text,
+  useToast,
+  SimpleGrid,
   Wrap,
   WrapItem,
+  Icon,
   Link,
-  IconButton,
   Tooltip,
-  useToast,
+  IconButton,
 } from '@chakra-ui/react'
 import { FiCopy } from 'react-icons/fi'
 import {
-  SiTelegram,
-  SiInstagram,
   SiFacebook,
+  SiInstagram,
+  SiTelegram,
   SiGithub,
   SiLinkedin,
 } from 'react-icons/si'
@@ -35,40 +36,45 @@ export const Contacts = () => {
   }
 
   return (
-    <Box as="section" py="12" mt="12" bg="blue.100">
+    <Box as="section" py="16" mt="12" bg="blue.100">
       <Container maxW="container.xl">
-        <Heading>Let&apos;s talk!</Heading>
-        <Text mt="2">
-          With this beautiful and responsive React components you will realize
-          your next project in no time.
-        </Text>
-        <Wrap mt="8">
-          <WrapItem gap="4">
-            <Icon boxSize="8" as={SiTelegram} />
-            <Icon boxSize="8" as={SiInstagram} />
-            <Icon boxSize="8" as={SiFacebook} />
-            <Icon boxSize="8" as={SiGithub} />
-            <Icon boxSize="8" as={SiLinkedin} />
-          </WrapItem>
-        </Wrap>
-        <Box mt="8">
-          <Link
-            fontWeight="500"
-            href={'mailto:' + EMAIL + "?subject=Let's talk!"}
-          >
-            {EMAIL}
-          </Link>
-          <Tooltip label="Copy email" hasArrow placement="top">
-            <IconButton
-              aria-label="copy-email"
-              icon={<FiCopy />}
-              colorScheme="black"
-              color="chakra-body-text"
-              ml="2"
-              onClick={copy}
-            />
-          </Tooltip>
-        </Box>
+        <SimpleGrid gap="8" columns={[1, 1, 2]} alignItems="center">
+          <Box>
+            <Heading>Let&apos;s talk!</Heading>
+            <Text mt="2">
+              Whether you&apos;re curious about job, projects, or cooperation —
+              I&apos;m ready to answer any and all questions.
+            </Text>
+          </Box>
+          <Box textAlign={[null, null, 'end']}>
+            <Box mb="4" mr="-2">
+              <Link
+                fontWeight="500"
+                href={'mailto:' + EMAIL + "?subject=Let's talk!"}
+              >
+                {EMAIL}
+              </Link>
+              <Tooltip label="Copy email" hasArrow placement="top">
+                <IconButton
+                  aria-label="copy-email"
+                  icon={<FiCopy />}
+                  colorScheme="black"
+                  color="chakra-body-text"
+                  onClick={copy}
+                />
+              </Tooltip>
+            </Box>
+            <Wrap justify={[null, null, 'flex-end']}>
+              <WrapItem gap="4">
+                <Icon boxSize="8" as={SiTelegram} />
+                <Icon boxSize="8" as={SiInstagram} />
+                <Icon boxSize="8" as={SiFacebook} />
+                <Icon boxSize="8" as={SiGithub} />
+                <Icon boxSize="8" as={SiLinkedin} />
+              </WrapItem>
+            </Wrap>
+          </Box>
+        </SimpleGrid>
       </Container>
     </Box>
   )

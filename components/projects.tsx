@@ -10,6 +10,7 @@ import {
   Divider,
   Link,
   Avatar,
+  Button,
 } from '@chakra-ui/react'
 import { FiExternalLink } from 'react-icons/fi'
 import {
@@ -37,6 +38,26 @@ export const Projects = () => {
         <Heading mb="12">💸 Projects</Heading>
 
         <SimpleGrid gap="8" columns={[1, 1, 2, 3]}>
+          <Box p="6" borderWidth="1px" borderColor="gray.900">
+            <HStack gap="2">
+              <Avatar name="Y I" bg="chakra-body-text" />
+              <Box>
+                <Heading size="md">YourIdea.com</Heading>
+              </Box>
+            </HStack>
+            <Text
+              display="block"
+              my="6"
+              fontWeight="bold"
+              color="blackAlpha.500"
+            >
+              Let&apos;s Build Something Awesome
+            </Text>
+            <Button as={Link} href="#contacts" color="white" bg="gray.900">
+              Let&apos;s talk!
+            </Button>
+          </Box>
+
           <Box p="6" borderWidth="1px">
             <HStack gap="2">
               <Image boxSize="12" alt="Nailbar" src="/nailbar.webp" />
