@@ -1,6 +1,0 @@
-export * from './header'
-export * from './footer'
-export * from './hero'
-export * from './work-experience'
-export * from './projects'
-export * from './contacts'
