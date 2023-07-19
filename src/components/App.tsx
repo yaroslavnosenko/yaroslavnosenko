@@ -1,27 +1,13 @@
-import {
-  Header,
-  Footer,
-  Summary,
-  Experience,
-  Skills,
-  Education,
-  Awards,
-} from '.'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Home, Resume } from '../pages'
 
 export const App = () => {
   return (
-    <>
-      <Header />
-      <main>
-        <div className="container mx-auto px-6 py-16">
-          <Summary />
-          <Experience />
-          <Skills />
-          <Education />
-          <Awards />
-        </div>
-      </main>
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/cv" element={<Resume />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
