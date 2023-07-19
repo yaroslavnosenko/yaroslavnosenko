@@ -3,11 +3,14 @@ import { Home, Resume } from '../pages'
 
 export const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/cv" element={<Resume />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/cv" element={<Resume />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+      <div className="bg" />
+    </>
   )
 }
