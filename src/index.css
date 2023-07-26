@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: 'Outfit Variable', Roboto, system-ui, sans-serif;
+  }
+}
+
 .bg {
   position: fixed;
   left: 0;
@@ -9,7 +15,6 @@
   top: 0;
   bottom: 0;
   z-index: -1;
-  padding: 0 2rem;
   background-color: #fff;
   background-image: radial-gradient(
       at 44% 0%,

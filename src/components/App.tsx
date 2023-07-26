@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Home, Resume } from '../pages'
+import { Grid } from '.'
+import '@fontsource-variable/outfit'
 
 export const App = () => {
   return (
@@ -10,7 +12,7 @@ export const App = () => {
           <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
-      <div className="bg" />
+      <Grid />
     </>
   )
 }

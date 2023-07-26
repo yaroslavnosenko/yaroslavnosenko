@@ -1,17 +1,13 @@
-import { Header, Hero } from '../components/portfolio'
+import { Header, Hero, Projects } from '../components/home'
 
 export const Home = () => {
   return (
     <>
       <Header />
       <main>
-        <div className="container mx-auto px-6 py-16">
+        <div className="container">
           <Hero />
-          {/* <Summary />
-          <Experience />
-          <Skills />
-          <Education />
-          <Awards /> */}
+          <Projects />
         </div>
       </main>
       {/* <Footer /> */}

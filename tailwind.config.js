@@ -2,7 +2,14 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      container: {
+        padding: {
+          DEFAULT: '1.5rem',
+        },
+        center: true,
+      },
+    },
   },
   plugins: [],
 }
