@@ -10,7 +10,7 @@ export const Header = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="/Resume-Yaroslav-Nosenko.pdf"
+            href="/CV_Yaroslav_Nosenko.pdf"
             className="text-right hover:underline"
           >
             Resume
