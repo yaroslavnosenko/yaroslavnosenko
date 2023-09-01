@@ -4,13 +4,13 @@ export const Header = () => {
       <div className="container py-24">
         <div className="grid grid-cols-3 lg:grid-cols-6 xl:grid-cols-12 gap-x-8">
           <div className="col-span-2 lg:col-span-4 xl:col-span-10">
-            <h1 className="font-bold text-3xl">Yaro</h1>
+            <h1 className="font-bold text-3xl">Greg</h1>
             <p>Software Engineer</p>
           </div>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="/CV_Yaroslav_Nosenko.pdf"
+            href="/CV_Gregory_Nosenko.pdf"
             className="text-right hover:underline"
           >
             Resume
