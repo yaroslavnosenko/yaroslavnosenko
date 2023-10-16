@@ -78,7 +78,7 @@ export const Projects = () => {
           <Details
             name="Recode"
             desc="QR Code Menu web app for restaurants & bars."
-            web="https://www.recode.menu/"
+            web="https://recode-ui.vercel.app"
           />
         </div>
         <div className="col-span-3 hidden lg:block xl:hidden" />
