@@ -67,8 +67,8 @@ export const Projects = () => {
           <Details
             name="Solidum"
             desc="NFT platform that transforms any file into token."
-            github="https://github.com/solidumlabs/dapp"
-            web="https://solidum.app/"
+            github="https://github.com/yaroslavnosenko/solidum"
+            web="https://solidum-seven.vercel.app/"
           />
         </div>
       </div>
