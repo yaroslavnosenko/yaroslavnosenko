@@ -6,7 +6,7 @@ interface DetailsProps {
   name: string
   desc: string
   github?: string
-  web: string
+  web?: string
 }
 
 const MobileScreen = ({ src }: ScreenProps) => {
@@ -43,14 +43,16 @@ const Details = ({ name, desc, github, web }: DetailsProps) => {
             Github
           </a>
         )}
-        <a
-          className="hover:underline"
-          target="_blank"
-          rel="noopener noreferrer"
-          href={web}
-        >
-          Web
-        </a>
+        {web && (
+          <a
+            className="hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={web}
+          >
+            Web
+          </a>
+        )}
       </div>
     </div>
   )
@@ -59,6 +61,26 @@ const Details = ({ name, desc, github, web }: DetailsProps) => {
 export const Projects = () => {
   return (
     <section>
+      <div className="grid grid-cols-3 lg:grid-cols-6 xl:grid-cols-12 gap-x-8 xl:items-center gap-y-12 mb-36">
+        <div className="col-span-3">
+          <Details
+            name="Drnk"
+            desc="React Native project to discover local happy hour deals."
+            github="https://github.com/yaroslavnosenko/drnk"
+          />
+        </div>
+        <div className="col-span-3 hidden lg:block xl:hidden" />
+        <div className="col-span-1 lg:col-span-2 xl:col-span-3">
+          <MobileScreen src="/drnk-1.png" />
+        </div>
+        <div className="col-span-1 lg:col-span-2 xl:col-span-3">
+          <MobileScreen src="/drnk-2.png" />
+        </div>
+        <div className="col-span-1 lg:col-span-2 xl:col-span-3">
+          <MobileScreen src="/drnk-3.png" />
+        </div>
+      </div>
+
       <div className="grid grid-cols-3 lg:grid-cols-6 xl:grid-cols-12 gap-x-8 items-center gap-y-12 mb-36">
         <div className="col-span-full xl:col-span-8">
           <DesktopScreen src="/solidum.png" />
